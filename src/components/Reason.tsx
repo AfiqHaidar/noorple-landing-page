@@ -61,6 +61,9 @@ const Reason = () => {
 
         </div>
     </div>
+    <div className='flex justify-center'>
+        <p className='text-center py-3 px-5 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:bg-[#CCE3DE]'> Get Started!</p>
+    </div>
   </div>
   )
 }

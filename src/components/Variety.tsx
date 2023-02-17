@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import meatImg from 'public/meat.jpg'
-import veganImg from 'public/vegan.jpg'
-import mexImg from 'public/mexican.jpg'
-import seaImg from 'public/seafood.jpg'
+import meatImg from 'public/meat.png'
+import veganImg from 'public/vegan.png'
+import mexImg from 'public/mexican.png'
+import seaImg from 'public/seafood.png'
 import Link from 'next/link'
 
 const Variety = () => {
@@ -14,7 +14,7 @@ const Variety = () => {
             <h2 className='py-2'>We Have A Wide Variety Of Recipes!</h2>
             <div className='grid md:grid-cols-2 gap-8'>
 
-                <div className='relative flex items-center justify-center h-auto w-full shadow-sm shadow-[#F6FFF8] rounded-xl p-4 group hover:bg-gradient-to-r from-[#abcfed] to-[#123456]'>
+                <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-[#F6FFF8] rounded-xl p-4 group hover:bg-gradient-to-r from-[#abcfed] to-[#123456]'>
                     <Image className='rounded-xl group-hover:opacity-10'   src={meatImg} alt='/'/>
                     <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                       <h3 className='text-2xl text-white tracking-wider text-center'>MEAT</h3>
@@ -25,7 +25,7 @@ const Variety = () => {
                     </div>
                 </div>
 
-                <div className='relative flex items-center justify-center h-auto w-full shadow-sm shadow-[#F6FFF8] rounded-xl p-4 group hover:bg-gradient-to-r from-[#abcfed] to-[#123456]'>
+                <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-[#F6FFF8] rounded-xl p-4 group hover:bg-gradient-to-r from-[#abcfed] to-[#123456]'>
                     <Image className='rounded-xl group-hover:opacity-10'   src={seaImg} alt='/'/>
                     <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                       <h3 className='text-2xl text-white tracking-wider text-center'>SEAFOOD</h3>
@@ -35,7 +35,7 @@ const Variety = () => {
                       </Link>
                     </div>
                 </div>
-                <div className='relative flex items-center justify-center h-auto w-full shadow-sm shadow-[#F6FFF8] rounded-xl p-4 group hover:bg-gradient-to-r from-[#abcfed] to-[#123456]'>
+                <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-[#F6FFF8] rounded-xl p-4 group hover:bg-gradient-to-r from-[#abcfed] to-[#123456]'>
                     <Image className='rounded-xl group-hover:opacity-10'   src={mexImg} alt='/'/>
                     <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                       <h3 className='text-2xl text-white tracking-wider text-center'>MEXICAN</h3>
@@ -45,7 +45,7 @@ const Variety = () => {
                       </Link>
                     </div>
                 </div>
-                <div className='relative flex items-center justify-center h-auto w-full shadow-sm shadow-[#F6FFF8] rounded-xl p-4 group hover:bg-gradient-to-r from-[#abcfed] to-[#123456]'>
+                <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-[#F6FFF8] rounded-xl p-4 group hover:bg-gradient-to-r from-[#abcfed] to-[#123456]'>
                     <Image className='rounded-xl group-hover:opacity-10'   src={veganImg} alt='/'/>
                     <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                       <h3 className='text-2xl text-white tracking-wider text-center'>VEGAN</h3>

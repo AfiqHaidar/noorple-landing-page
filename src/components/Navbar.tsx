@@ -1,31 +1,47 @@
+import { truncate } from 'fs'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {FaFacebookMessenger} from 'react-icons/fa'
+import Warning from './Warning'
 
 const navbar = () => {
     const [nav, setNav] = useState(false)
+    const [shadow, setShadow] = useState(false)
 
     const handleNav = () => {
         setNav(!nav)
     }
 
+    useEffect(()=>{
+        const handleShade = () =>{
+            if(window.scrollY >= 90){
+                setShadow(true)
+                
+            }else{
+                setShadow(false)
+                
+            }
+        }
+        window.addEventListener('scroll', handleShade);
+        
+    },[])
 
   return (
-    <div className='fixed w-full h-16 shadow-xl z-[100] bg-[#EAF4F4] ' >
+    <div className={shadow ? 'fixed w-full h-16 shadow-xl z-[100] bg-[#EAF4F480] ease-in duration-300' : 'fixed w-full h-16 z-[100] bg-[#EAF4F4] '} >
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <img src="/logo.png" alt="logo" width={50} height={25} />
-            <div>
+            <div >
             <ul className='hidden md:flex'>
-                <Link href='/'>
+                <Link href='/#her0'>
                     <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
                 </Link>
-                <Link href='/'>
+                <Link href='/#variety'>
                     <li className='ml-10 text-sm uppercase hover:border-b'>Our Menus</li>
                 </Link>
-                <Link href='/'>
+                <Link href='/#reason'>
                     <li className='ml-10 text-sm uppercase hover:border-b'>Order Now</li>
                 </Link>
                 <Link href='/'>

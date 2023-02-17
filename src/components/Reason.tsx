@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image';
+import ButtonLink from './ButtonLink';
+import Warning from './Warning';
 
 const Reason = () => {
+
+    const [warning, setWarning] = useState(false)
+
+    const handleWarning = () => {
+        setWarning(!warning)
+    }
+
   return (
-  <div className='w-full  p-2' >
+  <div id='reason' className='w-full  p-2' >
     <div className='flex justify-center pt-10 tracking-widest'>
         <h2 className='font-normal'>Why HelloFood?</h2>
     </div>
@@ -60,10 +69,13 @@ const Reason = () => {
 
 
         </div>
+    </div >
+    <div onClick={handleWarning}>
+        <ButtonLink title='Get Started!'/>
     </div>
-    <div className='flex justify-center'>
-        <p className='text-center py-3 px-5 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:bg-[#CCE3DE]'> Get Started!</p>
-    </div>
+    <div className={warning? '':'hidden'}>
+            <Warning />
+        </div>
   </div>
   )
 }

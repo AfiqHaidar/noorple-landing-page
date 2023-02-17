@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    @apply scroll-smooth
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
 @layer base {
     body {
         @apply bg-[#EAF4F4] text-[#003a1a] tracking-wide

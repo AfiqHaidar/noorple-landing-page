@@ -17,10 +17,10 @@ const Hero = () => {
     <div id='hero' className='w-full  text-center bg-[#00000075] md:bg-[#00000000] '>
         <div className='max-w-[1240px] w-full h-full mx-auto p-4 flex justify-center items-center'>
             <div className='pt-72'>
-            <h1 className='py-4 font-normal max-w-[60%] m-auto drop-shadow-2xl shadow-white text-black '>
+            <h1 className='py-4 font-normal max-w-[60%] m-auto drop-shadow-2xl shadow-white text-white md:text-black ease-in duration-200 '>
                 Take the stress out of mealtime
             </h1>
-            <p className='pt-4 pb-20 max-w-[50%] m-auto tracking-widest drop-shadow-lg shadow-black'>
+            <p className='pt-4 pb-20 max-w-[50%] m-auto tracking-widest drop-shadow-lg shadow-black text-[#F6FFF8] md:text-[#6B9080] ease-in duration-200'>
                 recipe made with love
             </p>
             <div onClick={handleWarning}>

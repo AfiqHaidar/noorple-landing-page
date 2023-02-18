@@ -1,11 +1,11 @@
-import { truncate } from 'fs'
-import Image from 'next/image'
+
+
 import Link from 'next/link'
 import React, {useState, useEffect} from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {FaFacebookMessenger} from 'react-icons/fa'
-import Warning from './Warning'
+
 
 const navbar = () => {
     const [nav, setNav] = useState(false)
